@@ -30,7 +30,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'State the languages or technologes assocated with this project'
+        message: 'State the languages or technologies assocated with this project'
     },
     {
         type: 'input',
