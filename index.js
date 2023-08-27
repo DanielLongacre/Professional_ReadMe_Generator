@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require('fs'); //Node module for files
-const inquirer = require('inquirer');
-const path = require('path');
-const generateMarkdown = require('./utils/generateMarkdown');
+const inquirer = require('inquirer'); //NPM command line interface package
+const path = require('path'); //Creates the directory path of where to put the newly created file
+const generateMarkdown = require('./utils/generateMarkdown'); //Gets the README template 
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -56,10 +56,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // Path join is a node method used to combine path segments together
+    // Prcoess.cwd is a method used to get the current working directory of the node.js process
+    // Using writeFileSync in order to do this process synchronously 
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log('Creating README.md file...');
+        writeToFile('./test/README.md', generateMarkdown({...responses}));
+    });
+}
 
 // Function call to initialize app
 init();
