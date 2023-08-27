@@ -8,7 +8,7 @@ const generateMarkdown = require('./utils/generateMarkdown'); //Gets the README 
 const questions = [
     {
         type: 'input',
-        name: 'tile',
+        name: 'title',
         message: 'Input the name of your project: '
     },
     {
