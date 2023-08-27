@@ -1,8 +1,12 @@
-## undefined
+## Test Run
   by Daniel Longacre
+  ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
+  
+* [License](#license)
+
 
   ## Description
-  To generate a professional README file for developers
+  To generate a professional README file for developers through the  use of the terminal
 
   ## Installation
   The following necessary dependencies must be installed to run the 
@@ -21,10 +25,6 @@
   * Name - Daniel Longacre
   * Email - lookmeup@gmail.com
   * GitHub = [DanielLongacre](https://github.com/DanielLongacre)
-
-  ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
-  
-* [License](#license)
 
   ## License
 

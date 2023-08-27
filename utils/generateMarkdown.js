@@ -31,6 +31,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `## ${data.title}
   by ${data.name}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Description
   ${data.description}
@@ -53,8 +55,6 @@ function generateMarkdown(data) {
   * Email - ${data.email}
   * GitHub = [${data.creator}](https://github.com/${data.creator})
 
-  ${renderLicenseBadge(data.license)}
-  ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
   `;
 }
