@@ -33,6 +33,11 @@ THEN I am taken to the corresponding section of the README
 
 The following image shows an example of the application's output:
 
-![The appliation displys the questions in the terminal and then saves the output to the test folder.](./images/Preview%20README.md%20-%20Professional_ReadMe_Generator%20-%20Visual%20Studio%20Code%208_31_2023%202_54_32%20PM.png)
+![The appliation displays the questions in the terminal and then saves the output to the test folder.](./images/Preview%20README.md%20-%20Professional_ReadMe_Generator%20-%20Visual%20Studio%20Code%208_31_2023%202_54_32%20PM.png)
 
-```
+
+## Walkthrough
+
+The following is a video walkthrough of the application's functionality:
+
+Click [here](https://drive.google.com/file/d/1yMB7fQK1PyJ23F_0WlIQw8WSU812j00U/view) to watch the application walkthrough.
