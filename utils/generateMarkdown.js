@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license !== 'none') {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
+    return `\n ![GitHub license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)\n`;
   }
   return '';
 }
@@ -34,7 +34,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
 
-  ##Table of Contents
+  ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -46,7 +46,7 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Installation
-  The following necessary dependencies must be installed to run the 
+  The following dependencies must be installed to run the 
   application properly: ${data.require}
 
   ## Usage
